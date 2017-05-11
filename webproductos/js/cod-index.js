@@ -7,6 +7,6 @@ function ini()
 
 function load()
 {
-	$(".container").fadeOut(2000)
+	$(".content").fadeOut(1000)
 	window.location.href = 'listado.html';
 }
