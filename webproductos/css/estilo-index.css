@@ -1,0 +1,24 @@
+
+#loading
+{
+	width: 100px;
+	height: 100px;
+	background: url('../img/loading.gif');
+	background-size: 100% 100%;
+	z-index: 999;
+	margin: 50% auto;
+}
+
+.content {
+    width: 600px;
+    height: 600px;
+    line-height: 600px;
+    margin:0px auto;
+    text-align:center;
+    /*background-color:#CCCCCC;*/
+}
+
+.img-centrado {
+    vertical-align:middle;
+    z-index: 777;
+}
