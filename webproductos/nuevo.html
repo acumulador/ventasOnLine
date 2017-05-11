@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Agregar Producto</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/fileinput.min.css">
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="div-space"></div>
+			<div class="row">
+		  		<div class="col-xs-12 col-md-12">
+		  		<div class="panel panel-success" style="text-align: center;">
+		  			<div class="panel-heading">
+		  				<a class="btn btn-default" style="float: left;" href="listado.html" role="button">Volver</a>
+					    <h3 class="panel-title">Agregar Producto</h3>
+					</div>
+		  			<form class="form-horizontal">
+		  				<br>
+						<div class="form-group">
+							<label for="txtTitulo" class="col-sm-2 control-label">
+					    		Seleccione imagen de producto
+					    	</label>
+							<div class="col-sm-9">
+								<input id="file-img" name="file-img" type="file" class="file" data-show-upload="false">
+							</div>
+						</div>
+
+					  <div class="form-group">
+					    <label for="txtTitulo" class="col-sm-2 control-label">
+					    	Titulo
+					    </label>
+					    <div class="col-sm-9">
+					      	<input type="text" class="form-control" id="txtTitulo" placeholder="Titulo">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="txtDetalle" class="col-sm-2 control-label">Detalle Producto</label>
+					    <div class="col-sm-9">
+					      	<textarea class="form-control" rows="3" id="txtDetalle" placeholder="Detalle de Producto"></textarea>
+					    </div>
+					  </div>
+						<div class="form-group">
+						    <div class="col-sm-12">
+						      	<button type="button" class="btn btn-success" id="btnEnviar">Guardar</button>
+						    </div>
+						</div>
+					</form>
+				</div>
+				</div>
+		  	</div>
+		</script>
+	</div>
+	
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/handlebars.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/fileinput.min.js"></script>
+<script src="js/cod-add.js"></script>
+
+</body>
+</html>
