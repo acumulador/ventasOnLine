@@ -2,13 +2,7 @@ $(document).on("ready", ini);
 
 function ini()
 {
-	$("#file-img").fileinput({
-		allowedFileExtensions: ['jpg', 'png', 'gif'],
-        showUpload: false,
-        maxFileCount: 1,
-        mainClass: "input-group-lg"
-    });
-
+	
     $('#btnEnviar').on("click", enviarProducto)
 
 }
@@ -19,6 +13,11 @@ function enviarProducto()
     {
         if($('#txtTitulo').val() != "" && $('#txtDetalle').val() != "")
         {
+            var dataProd = {
+                titulo_producto: $('#txtTitulo').val(),
+                ds_producto: $('#txtDetalle').val(),
+                foto: $('#file-img').val()
+            }
             
             $.ajax({
                 type: "POST",
@@ -27,10 +26,6 @@ function enviarProducto()
                 url: 'http://localhost/apiproductos/productos/',
                 success: function(data) {
                     alert("Producto registrado correctamente!!");
-
-                    $('#txtTitulo').val("");
-                    $('#txtDetalle').val("");
-                    $('#file-img').val("");
 
                 },
                 error: function(ex) {
